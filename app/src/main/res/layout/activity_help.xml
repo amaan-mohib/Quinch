@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".help">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#292626"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:logo="@drawable/baseline_help_outline_24"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title=" Help"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:titleTextColor="#ffffff" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="There are 10 questions throughout the quiz. Each question carries 10 points, so a total of 100 points can be scored.
+                \n\nFor help there are four lifelines unlocked at certain levels of the quiz, with an increase in the allotted time of +10 seconds. But on using every lifeline it gets disabled and 5 points get deducted.
+                \n\nIt starts with 'Option Charts', then you get '50:50', then 'Search the Web', and lastly 'Flip the Question'"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/my_toolbar" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:background="@android:color/white"
+                        android:elevation="8dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="362dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:elevation="4dp"
+                        android:gravity="center"
+                        android:text="Lifelines:"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="88dp"
+                        android:layout_height="56dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/lifeline_audi"
+                        android:clickable="false"
+                        android:foreground="@drawable/baseline_bar_chart_24"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="This is 'Option Charts'.
+                        \nOn using it charts appear with different percentages for the given options. Using this one can get the right answer."
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="88dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/lifeline_audi"
+                        android:clickable="false"
+                        android:foregroundGravity="center"
+                        android:text="50 : 50"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="This is '50 : 50'.
+                        \nOn using it, out of the four given options, two wrong options gets vanished."
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="88dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/lifeline_audi"
+                        android:clickable="false"
+                        android:foreground="@drawable/outline_search_24"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="This is 'Search the Web'.
+                        \nOn using it one can search the question on the internet."
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="20dp"
+                android:weightSum="3">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="88dp"
+                        android:layout_height="56dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:background="@drawable/lifeline_audi"
+                        android:clickable="false"
+                        android:foreground="@drawable/outline_autorenew_24"
+                        android:foregroundGravity="center" />
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="This is 'Flip the Question'.
+                        \nOn using it the question changes and a new question appears."
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+                    <TextView
+                        android:id="@+id/ab"
+                        android:layout_width="362dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:onClick="about"
+                        android:text="About"
+                        android:textColor="#ffffff"
+                        android:textColorLink="@android:color/holo_blue_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

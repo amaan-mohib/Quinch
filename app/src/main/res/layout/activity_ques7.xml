@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:backgroundTintMode="multiply"
+    tools:context=".ques7">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="49%"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar5"
+        app:layout_constraintStart_toEndOf="@+id/progressBar5"
+        app:layout_constraintTop_toTopOf="@+id/progressBar5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="373dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/box"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Points"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/trophy" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="366dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ques_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="88dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/lifeline_audi"
+        android:foreground="@drawable/baseline_bar_chart_24"
+        android:foregroundGravity="center"
+        android:onClick="audi"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toEndOf="@+id/button10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="88dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/lifeline_audi"
+        android:onClick="search"
+        android:foreground="@drawable/outline_search_24"
+        android:foregroundGravity="center"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="88dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/lifeline_audi"
+        android:onClick="fifty"
+        android:text="50 : 50"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/butripple"
+        android:onClick="endscr"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butripple"
+        android:onClick="endscr"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/butripple"
+        android:onClick="endscr"
+        android:text="@string/but"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/butripple"
+        android:onClick="nextques"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:srcCompat="@drawable/quinch_logo_circle" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:contentDescription="Timer"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_alarm_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="373dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="13dp"
+        android:progress="13"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:progress="27"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <ProgressBar
+        android:id="@+id/progressBar5"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:progress="49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.0"
+        android:progress="11"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="27%"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar4"
+        app:layout_constraintStart_toEndOf="@+id/progressBar4"
+        app:layout_constraintTop_toTopOf="@+id/progressBar4" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="13%"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+        app:layout_constraintStart_toEndOf="@+id/progressBar2"
+        app:layout_constraintTop_toTopOf="@+id/progressBar2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="11%"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar3"
+        app:layout_constraintStart_toEndOf="@+id/progressBar3"
+        app:layout_constraintTop_toTopOf="@+id/progressBar3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="138dp"
+        android:text="TextView"
+        android:textColor="#ffffff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#A1000000"
+        android:clickable="true"
+        android:onClick="exit"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="30dp"
+        app:rippleColor="#68FFFFFF"
+        app:srcCompat="@drawable/baseline_add_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#A1000000"
+        android:clickable="true"
+        android:onClick="help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="30dp"
+        app:rippleColor="#68FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="181dp"
+        tools:visibility="invisible" />
+</androidx.constraintlayout.widget.ConstraintLayout>

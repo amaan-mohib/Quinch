@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/darker_gray" android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="4"
+            android:scaleType="centerInside"
+            android:scaleX="1"
+            android:scaleY="1"
+            app:srcCompat="@drawable/ic_icons8_google_filled" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="566dp"
+        android:layout_weight="1" />
+
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:layout_weight="2"
+    android:orientation="horizontal" android:weightSum="2">
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="0dp"
+        style="@style/Theme.AppCompat.Light"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#968787"
+        android:text="Restart Time (-5 points)"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/gotit"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:background="@android:color/darker_gray"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_height="match_parent"
+        android:text="Got It!" />
+
+</LinearLayout>
+</LinearLayout>
